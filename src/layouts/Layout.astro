@@ -2,7 +2,7 @@
 interface Props {
 	title: string;
 }
-
+import Dashboard from "../components/vue/Dashboard.vue"
 const { title } = Astro.props;
 ---
 
@@ -18,19 +18,22 @@ const { title } = Astro.props;
 	</head>
 	<body>
 		<slot />
+		<Dashboard />
 	</body>
 </html>
 <style is:global>
 	:root {
-		--accent: 136, 58, 234;
-		--accent-light: 224, 204, 250;
-		--accent-dark: 49, 10, 101;
+		--accent: 48, 10, 240;
+		--accent-light: 222, 218, 240;
+		--accent-dark: 19, 4, 89;
 		--accent-gradient: linear-gradient(
 			45deg,
 			rgb(var(--accent)),
-			rgb(var(--accent-light)) 30%,
-			white 60%
+			magenta 60%
 		);
+	}
+	h1 {
+		color: white;
 	}
 	html {
 		font-family: system-ui, sans-serif;
