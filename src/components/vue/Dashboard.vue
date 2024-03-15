@@ -9,10 +9,3 @@
 <script setup>
 import Project from "./Project.vue"
 </script>
-
-<style>
-.dashboard {
-	margin: 0 auto;
-	max-width: 1024px;
-}
-</style>
